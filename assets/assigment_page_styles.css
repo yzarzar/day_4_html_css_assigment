@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --bg-color: #c3b5b5;
+  --primary-font: "Roboto Mono", monospace;
+  --title-font: "Noto Serif", serif;
+  --nav-bg-color: #c7d27e;
+  --white: #fff;
+  --font-lg: 30px;
+  --font-md: 20px;
+  --font-sm: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--bg-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--nav-bg-color);
+  align-items: center;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: var(--font-md);
+}
+
+nav ul li a:hover i {
+  color: var(--bg-color);
+}
+
+.logo {
+  font-size: var(--font-lg);
+  font-family: var(--title-font);
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.dashboard-section {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.side-bar {
+  background-color: black;
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  top: 60px;
+  padding: 40px;
+}
+
+.side-bar ul {
+  list-style: none;
+}
+
+.side-bar li {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.sign-up-form-section {
+  margin-left: 15%;
+  width: 85%;
+  padding: 40px;
+  background-color: var(--bg-color);
+}
+
+.sign-up-form {
+  width: 90%;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #ff5722;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  padding: 30px;
+  margin-left: 15%;
+}
